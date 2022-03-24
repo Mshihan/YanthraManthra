@@ -1,8 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+@font-face {
+  font-family: "Red river";
+  src: url("/assets/fonts/Redriver.ttf");
+}
+
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.main-bar {
+  position: relative;
 }
 
 .navigation-bar {
@@ -43,13 +61,13 @@ nav > ul > li > a {
 }
 
 .social-media-icons {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1rem;
+  width: 1rem;
 }
 
 .button-cyan {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 1.8rem;
+  width: 1.8rem;
   background-color: cyan;
   display: flex;
   justify-content: center;
@@ -68,5 +86,267 @@ nav > ul > li > a {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 87.3vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.landing > h1 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  font-family: "Red river", sans-serif;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+
+.about {
+  background-image: url(./assets/images/about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  /* height: 80vh; */
+  margin: 0;
+}
+
+.details-container {
+  padding: 5rem 8rem;
+}
+
+.about > .details-container > h1 {
+  color: white;
+  margin: 0;
+  font-family: "Red river", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.details-container > .container_paragraph > p {
+  color: white;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  letter-spacing: 2px;
+}
+
+.container_paragraph {
+  width: 50vw;
+}
+
+.star-image {
+  width: 40rem;
+  position: absolute;
+  top: 90vh;
+  left: 65vw;
+}
+
+.team {
+  width: 100%;
+  background-image: url(/assets/images/team.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 10%;
+  position: relative;
+}
+
+.team > .details-container > h1 {
+  color: white;
+  margin: 0;
+  font-family: "Red river", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.team-list {
+  margin-top: 2rem;
+  list-style: none;
+  color: white;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  letter-spacing: 2px;
+}
+
+.projects {
+  width: 100%;
+  /* height: 100vh; */
+  background-image: url(/assets/images/about.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 0px;
+  /* background-position: center; */
+  position: relative;
+  /* display: flex;
+  align-items: center; */
+}
+.projects-container {
+  padding: 5rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects > .projects-container > div > h1 {
+  color: white;
+  margin: 0;
+  font-family: "Red river", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.projects-container > div > h2 {
+  color: white;
+  font-family: "lato", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-paragraph {
+  color: white;
+  font-size: 1.8rem;
+  /* line-height: rem; */
+  letter-spacing: 1px;
+  margin: 1rem 0 !important;
+}
+
+.project-link {
+  padding: 15px 30px;
+  background-color: #38103b;
+  margin-top: 2rem;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-family: "lato", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.project-image {
+  width: 312px;
+  height: 376px;
+}
+
+footer {
+  /* height: 20vh; */
+  width: 100%;
+  background-color: #000000;
+  padding: 0;
+}
+.footer-wrapper {
+  padding: 5rem 8rem;
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-heading > h2 {
+  font-family: "Red river", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.footer-heading > h1 {
+  font-family: "Red river", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.social-link_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.social-link_div > h2 {
+  font-family: "Red river", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.social-links-footer {
+  display: flex;
+  justify-content: end;
+}
+
+.button-cyan_footer {
+  height: 1.8rem;
+  width: 1.8rem;
+  background-color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}
+.footer-paragraph {
+  font-family: "Lato", sans-serif;
+  color: rgb(114, 114, 114);
+  margin-top: 2rem;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contactus > .footer-contactus-div > h2 {
+  font-family: "Red river", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.footer-contactus > .footer-contactus-div > a {
+  text-decoration: none;
+  color: rgb(128, 127, 127);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: right;
+}
+
+.footer-contactus-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.copyright {
+  font-family: "Red river", sans-serif;
+  font-size: 1rem;
+  color: rgb(141, 140, 140);
+  margin: 0;
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 900;
 }
